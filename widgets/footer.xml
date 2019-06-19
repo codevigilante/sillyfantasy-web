@@ -1,0 +1,44 @@
+<html>
+    <!-- Footer -->
+    <footer class="bg-dark">
+        <div class="container pt-6 pb-2">
+            <div class="row justify-content-md-between">
+                <div class="col-4 col-md-2 mb-4">
+                    <h4 class="h6">About</h4>
+                    <ul class="nav flex-column">
+                        <li class="mb-1"><a href="rank.html" class="text-muted">Rank</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-4 col-md-2 mb-4">
+                    <!--
+                    <h4 class="h6 mb-3">Services</h4>
+                    <ul class="nav flex-column">
+                        <li class="mb-1"><a href="#" class="text-muted">Branding</a></li>
+                        <li class="mb-1"><a href="#" class="text-muted">Design</a></li>
+                        <li class="mb-1"><a href="#" class="text-muted">Photography</a></li>
+                        <li class="mb-1"><a href="#" class="text-muted">UX/UI</a></li>
+                    </ul>
+                    -->
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                    <!--
+                    <h4 class="h6 mb-3">Social</h4>
+                    <ul class="nav flex-column">
+                        <li class="mb-1"><a href="#" class="text-muted">Twitter</a></li>
+                        <li class="mb-1"><a href="#" class="text-muted">Instagram</a></li>
+                        <li class="mb-1"><a href="#" class="text-muted">Dribbble</a></li>
+                        <li class="mb-1"><a href="#" class="text-muted">Facebook</a></li>
+                    </ul>
+                    -->
+                </div>
+                <div class="col-sm-12 col-md-4 mb-4">
+                    <h3 class="h6 mb-3">Player Rankings, Analytics, &#38; Tools</h3>
+                    <p class="text-muted">Silly Fantasy aims to provide high quality fantasy football analysis with accountability. Totally free. Totally transparent.</p>
+                </div>
+            </div>
+            <hr />
+            <p class="small">&#169; Made by <a href="http://sillywidgets.com" target="_blank">Silly Widgets</a></p>
+        </div>
+    </footer>
+</html>

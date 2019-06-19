@@ -1,0 +1,16 @@
+<sillyconfig>
+  <wwwroot>wwwroot</wwwroot>
+  <context id="globals">
+    <brand>Silly Fantasy</brand>
+    <tagline>Fantasy Football Rankings, Analytics, &#38; Tools</tagline>
+    <!--
+    <env>file:///Users/a-ron/Google Drive/dev/sillyfantasy/ui/web/wwwroot/</env> 
+    <env>file://C:/tacocat/GoogleDrive/dev/web/sillyfantasy.com/wwwroot/</env>
+    -->
+    <env>http://sillyfantasy.com</env>
+  </context>
+  <pages>
+    <page id="home" route="/" view="landing" content="home.md" />
+    <page id="rank" route="/rank.html" view="page" content="rank.md" />
+  </pages>
+</sillyconfig>
