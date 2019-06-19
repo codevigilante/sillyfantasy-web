@@ -1,0 +1,37 @@
+<html>
+  <sillywidget id="widgets/head" />
+  <body>
+    <sillywidget id="widgets/nav" />
+
+    <main id="content">
+
+        <div class="container py-6 bg-white text-dark">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 mb-4"><sillyvar id="title" /></h1>
+                    <p class="lead text-muted"><sillyvar id="lead" /></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white text-black">
+            <div class="container py-2">
+                <div class="bg-white mt-n6 px-3 px-lg-0">
+                    <div class="row justify-content-center py-4 py-lg-5">
+                        <div class="col-md-10 col-lg-8">
+                            <sillycontent />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <sillywidget id="widgets/newsletter" />
+    </main>
+
+    <sillywidget id="widgets/footer" />
+
+    <!-- JS (including Bootstrap & plugins) -->
+    <script src="js/theme.min.js"></script>
+  </body>
+</html>

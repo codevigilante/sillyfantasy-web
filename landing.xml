@@ -1,0 +1,42 @@
+<html>
+  <sillywidget id="widgets/head" />
+  <body>
+    <sillywidget id="widgets/nav" />
+
+    <main id="content">
+
+        <!-- Hero -->
+        <div class="bg-white text-black">
+            <div class="container py-5 py-lg-6 text-center">
+                <h1 class="display-3 pb-3"><sillyvar id="lede" /></h1>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <p class="lead text-dark mb-0"><sillyvar id="sublede" /></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <sillywidget id="widgets/newsletter" />
+
+        <div class="bg-white text-dark pt-2 pb-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <h2>Team Win/Loss Ranks - 2018</h2>
+                        <div id="chart"></div>
+                        <p class="lead"><small><a href="rank.html">What is Rank?</a></small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <sillywidget id="widgets/footer" />
+
+    <!-- JS (including Bootstrap & plugins) -->
+    <script src="js/theme.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/visuals.js"></script>
+  </body>
+</html>
