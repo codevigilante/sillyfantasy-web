@@ -3,7 +3,8 @@
     <div class="bg-danger text-dark text-center text-white">
         <div class="container py-3">
             <h2>OFFSEASON MODE</h2>
-            <p class="mb-4">The 2019 Season begins rollout in late July. Get early access to start prepping.</p>
+            <p class="mb-4">The 2019 Season begins rollout in late July</p>
+            <!--
             <form>
                 <div class="form-row justify-content-center align-items-center">
                     <div class="col-md-4">
@@ -19,6 +20,7 @@
                     </div>
                 </div>
             </form>
+            -->
         </div>
     </div>
 </html>
