@@ -3,7 +3,7 @@
   <context id="globals">
     <brand>Silly Fantasy</brand>
     <tagline>Fantasy Football Rankings, Analytics, &#38; Tools</tagline>
-    <env>file://C:/tacocat/GoogleDrive/dev/sillyfantasy/sillyfantasy-web/wwwroot/</env>
+    <env>http://sillyfantasy.com</env>
     <!--
     <env>file:///Users/a-ron/Google Drive/dev/sillyfantasy/ui/web/wwwroot/</env> 
     <env>file://C:/tacocat/GoogleDrive/dev/web/sillyfantasy.com/wwwroot/</env>
