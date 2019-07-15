@@ -6,26 +6,69 @@
     <main id="content">
 
         <!-- Hero -->
-        <div class="bg-white text-black">
-            <div class="container py-5 py-lg-6 text-center">
+        <div class="bg-white text-black border-bottom border-light border-1 mb-5">
+            <div class="container py-lg-3 text-center">
                 <h1 class="display-3 pb-3"><sillyvar id="lede" /></h1>
                 <div class="row justify-content-center">
                     <div class="col-lg-9">
                         <p class="lead text-dark mb-0"><sillyvar id="sublede" /></p>
+                        <p class="text-muted"><small>Updated: <span id="last-update">{ ERROR }</span></small></p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <sillywidget id="widgets/newsletter" />
-
-        <div class="bg-white text-dark pt-2 pb-5">
+        <div class="bg-white text-dark">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <h2>Team Win/Loss Ranks - 2018</h2>
-                        <div id="chart"></div>
-                        <p class="lead"><small><a href="rank.html">What is Rank?</a></small></p>
+                <div class="row">
+                    <div class="col-lg-3 pl-lg-5 order-lg-2 pt-lg-6">
+                        <nav id="nav-comp" class="navbar side-nav d-none d-lg-block navbar-expand-lg navbar-light sticky-top mb-3" aria-label="Components navigation">
+                            <a class="collapsed btn-block d-lg-none btn btn-outline-dark mb-3 p-3 text-center" href="#collapseOne" data-toggle="collapse" data-target="#navbarDocs" aria-expanded="false" aria-controls="navbarDocs" aria-label="Toggle navigation">
+                                <span class="text-uppercase">Navigation</span>
+                            </a>
+
+                            <div class="collapse navbar-collapse" id="navbarDocs">
+                                <ul class="navbar-nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#team-ranks">Team Ranks</a>
+                                    </li>
+                                    <li class="nav-item d-none d-lg-block">
+                                        <a class="nav-link" href="#">Go top &#8593;</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="col-lg-9 order-lg-1">
+
+                        <h2 class="pt-5 pt-lg-6" id="team-ranks">Team Ranks - 2019 Preseason</h2>
+                        <ul class="nav nav-tabs mt-3" id="tab-05" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="result-tab-05" data-toggle="tab" href="#result-05" role="tab" aria-controls="result-tab-05" aria-selected="true">Visual</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="html-tab-05" data-toggle="tab" href="#html-05" role="tab" aria-controls="html-tab-05" aria-selected="false">Tiered</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content bg-white p-4" id="tab-content-05">
+                            <div class="tab-pane fade show active" id="result-05" role="tabpanel" aria-labelledby="result-tab-05">
+                                <div id="chart"></div>
+                            </div>
+                            <div class="tab-pane fade" id="html-05" role="tabpanel" aria-labelledby="html-tab-05">
+                                <table class="table bg-white text-black">
+                                    <thead>
+                                        <tr>
+                                            <th>Team</th>
+                                            <th>Rank</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="team-tier-table">
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

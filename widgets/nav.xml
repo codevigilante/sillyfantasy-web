@@ -11,11 +11,12 @@
                 </button>
                 <div class="collapse navbar-collapse text-uppercase" id="navbarContent">
                     <ul class="navbar-nav ml-auto">
-                    <!--
                         <li class="nav-item">
-                            <a href="about.html" class="nav-link">About</a>
+                            <a href="rank.html" class="nav-link">Rank</a>
                         </li>
-                    -->
+                        <li class="nav-item">
+                            <a href="http://eepurl.com/gxpHez" id="mc-embedded-subscribe" target="_blank" class="nav-link bg-danger text-white px-3">Subscribe</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
