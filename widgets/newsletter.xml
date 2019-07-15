@@ -2,8 +2,19 @@
     <!-- Newsletter -->
     <div class="bg-danger text-dark text-center text-white">
         <div class="container py-3">
-            <h2>OFFSEASON MODE</h2>
-            <p class="mb-4">The 2019 Season begins rollout in late July</p>
+            <h2>2019 Weekly Reports - August Rollout</h2>
+            <p class="mb-4">Get instant access, free. No strings, just player rankings and data delivered to your inbox weekly.</p>
+            <!-- Begin Mailchimp Signup Form -->
+            <form action="https://outlook.us3.list-manage.com/subscribe/post?u=c047cfaec1ebb54d7fc819a0c&amp;id=492338fc28" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+                <div id="mc_embed_signup_scroll" class="form-row justify-content-center align-items-center">	
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_c047cfaec1ebb54d7fc819a0c_492338fc28" tabindex="-1" value="" />
+                    </div>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-dark mb-3" /></div>
+                </div>
+            </form>
+            <!--End mc_embed_signup-->
             <!--
             <form>
                 <div class="form-row justify-content-center align-items-center">
@@ -16,7 +27,7 @@
                         <input type="email" class="form-control border-0 font-italic mb-3" id="inputEmail" placeholder="Email Address" />
                     </div>
                     <div class="col-md-auto">
-                        <button type="submit" class="btn btn-dark mb-3">Gimme Early Access</button>
+                        <button type="submit" class="btn btn-dark mb-3">Signup</button>
                     </div>
                 </div>
             </form>
