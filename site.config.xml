@@ -12,6 +12,9 @@
   </context>
   <pages>
     <page id="home" route="/" view="landing" content="home.md" />
+    <page id="faq" route="/faq.html" view="page" content="faq.md" />
+    <!--
     <page id="rank" route="/rank.html" view="page" content="rank.md" />
+    -->
   </pages>
 </sillyconfig>

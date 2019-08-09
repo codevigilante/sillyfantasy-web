@@ -1,5 +1,7 @@
 <html>
+
   <sillywidget id="widgets/head" />
+
   <body>
     <sillywidget id="widgets/nav" />
 
@@ -25,8 +27,6 @@
                 </div>
             </div>
         </div>
-
-        <sillywidget id="widgets/newsletter" />
     </main>
 
     <sillywidget id="widgets/footer" />

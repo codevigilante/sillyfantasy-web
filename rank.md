@@ -5,7 +5,7 @@ If you’ve ever played Xbox Live, Microsoft’s premium online gaming service, 
 
 A TrueSkill value is composed of two numbers, the mean and uncertainty. In mathematical terms, the mean is the “center” value of a Gaussian distribution (familiar bell curve, figure below), and the uncertainty is the standard deviation from that mean. The single value that represents the conservative, or marginal, value is calculated by subtracting 3 standard deviations from the mean. This is the value used to compare teams and players, and to create rankings.
 
-<img src="img/gaussians.svg" />
+<img src="img/gaussians.svg" class="img-fluid img-rising" />
 
 TrueSkill’s real value, and one of the reasons we adopted it, comes from its ability to adjust quickly to new information. Since the single value is a conservative estimate, the true value is probably higher. So when a team or player logs a “victory,” his skill improves relative to the quality of that victory. Beat a good player, score raises more. Lose to a much worse player, score declines more.
 
