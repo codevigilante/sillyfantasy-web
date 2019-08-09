@@ -1,4 +1,4 @@
-  function handleError()
+  function teamHandleError()
   {
     var node = document.createElement("div");
     var text = document.createTextNode("There was a problem loading team win/loss ranks. Maybe try refreshing the page?");
@@ -8,7 +8,7 @@
     node.setAttribute("role", "alert");
 
     node.appendChild(text);
-    document.getElementById("chart").appendChild(node);
+    document.getElementById("team-chart").appendChild(node);
   }
   
   var xhttp = new XMLHttpRequest();
@@ -49,7 +49,7 @@
         }
       }
 
-      var chart = new ApexCharts(document.querySelector("#chart"), options);
+      var chart = new ApexCharts(document.querySelector("#team-chart"), options);
       
       chart.render();
 
@@ -97,9 +97,9 @@
     }
     else
     {
-      handleError();
+      teamHandleError();
     }
   };
-xhttp.onerror = handleError;
+xhttp.onerror = teamHandleError;
 xhttp.send();
 

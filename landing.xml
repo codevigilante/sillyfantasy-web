@@ -32,6 +32,9 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="#team-ranks">Team Ranks</a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#qb-ranks">QB Ranks</a>
+                                    </li>
                                     <li class="nav-item d-none d-lg-block">
                                         <a class="nav-link" href="#">Go top &#8593;</a>
                                     </li>
@@ -42,6 +45,7 @@
 
                     <div class="col-lg-9 order-lg-1">
 
+                        <!-- Team Ranks -->
                         <h2 class="pt-5 pt-lg-6" id="team-ranks">Team Ranks - 2019 Preseason</h2>
                         <ul class="nav nav-tabs mt-3" id="tab-05" role="tablist">
                             <li class="nav-item">
@@ -53,7 +57,7 @@
                         </ul>
                         <div class="tab-content bg-white p-4" id="tab-content-05">
                             <div class="tab-pane fade show active" id="result-05" role="tabpanel" aria-labelledby="result-tab-05">
-                                <div id="chart"></div>
+                                <div id="team-chart"></div>
                             </div>
                             <div class="tab-pane fade" id="html-05" role="tabpanel" aria-labelledby="html-tab-05">
                                 <table class="table bg-white text-black">
@@ -64,6 +68,36 @@
                                         </tr>
                                     </thead>
                                     <tbody id="team-tier-table">
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- QB Ranks -->
+                        <h2 class="pt-5 pt-lg-6" id="qb-ranks">QB Ranks - 2019 Preseason</h2>
+                        <ul class="nav nav-tabs mt-3" id="tab-06" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="result-tab-06" data-toggle="tab" href="#result-06" role="tab" aria-controls="result-tab-06" aria-selected="true">Visual</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="html-tab-06" data-toggle="tab" href="#html-06" role="tab" aria-controls="html-tab-06" aria-selected="false">Tiered</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content bg-white p-4" id="tab-content-06">
+                            <div class="tab-pane fade show active" id="result-06" role="tabpanel" aria-labelledby="result-tab-06">
+                                <div id="qb-chart"></div>
+                            </div>
+                            <div class="tab-pane fade" id="html-06" role="tabpanel" aria-labelledby="html-tab-06">
+                                <table class="table bg-white text-black">
+                                    <thead>
+                                        <tr>
+                                            <th>QB</th>
+                                            <th>Team</th>
+                                            <th>Rank</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="qb-tier-table">
                                         
                                     </tbody>
                                 </table>
@@ -81,5 +115,6 @@
     <script src="js/theme.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="js/team-winloss-ranks.js"></script>
+    <script src="js/qb-rank.js"></script>
   </body>
 </html>
