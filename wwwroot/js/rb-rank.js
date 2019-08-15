@@ -1,32 +1,30 @@
-function qbHandleError()
+function rbHandleError()
 {
     var node = document.createElement("div");
-    var text = document.createTextNode("There was a problem loading qb ranks. Maybe try refreshing the page?");
+    var text = document.createTextNode("There was a problem loading rb ranks. Maybe try refreshing the page?");
 
     node.classList.add("alert");
     node.classList.add("alert-danger");
     node.setAttribute("role", "alert");
 
     node.appendChild(text);
-    document.getElementById("qb-chart").appendChild(node);
+    document.getElementById("rb-chart").appendChild(node);
 }
 
-var qbXhttp = new XMLHttpRequest();
+var rbXhttp = new XMLHttpRequest();
 
-qbXhttp.open("GET", "https://s3-us-west-1.amazonaws.com/sillyfantasy.com/data/rank-qbs.json", true);
-qbXhttp.onload = function() 
+rbXhttp.open("GET", "https://s3-us-west-1.amazonaws.com/sillyfantasy.com/data/rank-rbs.json", true);
+rbXhttp.onload = function() 
 {
     if (this.status == 200) 
     {
         var data = JSON.parse(this.responseText);
 
-        document.getElementById("last-update").innerHTML = data.lastupdate;
-
         var options = 
         {
             chart: 
             {
-                height: 1200,
+                height: 1600,
                 type: 'bar'
             },
             plotOptions: 
@@ -38,7 +36,7 @@ qbXhttp.onload = function()
                         position: 'top'
                     }
                 }
-            },            
+            },
             series: [{
                 name: 'Conservative Rank',
                 data: data.seriesconservative
@@ -48,11 +46,11 @@ qbXhttp.onload = function()
             }
         }
 
-        var chart = new ApexCharts(document.querySelector("#qb-chart"), options);
+        var chart = new ApexCharts(document.querySelector("#rb-chart"), options);
     
         chart.render();
 
-        var tierTable = document.getElementById("qb-tier-table");
+        var tierTable = document.getElementById("rb-tier-table");
         var lastTier = 0;
 
         for(var i = 0; i < data.tiers.length; ++i)
@@ -101,8 +99,8 @@ qbXhttp.onload = function()
     }
     else
     {
-        qbHandleError();
+        rbHandleError();
     }
 };
-qbXhttp.onerror = qbHandleError;
-qbXhttp.send();
+rbXhttp.onerror = rbHandleError;
+rbXhttp.send();
