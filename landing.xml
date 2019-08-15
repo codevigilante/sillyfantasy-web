@@ -35,6 +35,12 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="#qb-ranks">QB Ranks</a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#rb-ranks">RB Ranks</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#wr-ranks">WR Ranks</a>
+                                    </li>
                                     <li class="nav-item d-none d-lg-block">
                                         <a class="nav-link" href="#">Go top &#8593;</a>
                                     </li>
@@ -103,6 +109,66 @@
                                 </table>
                             </div>
                         </div>
+
+                        <!-- RB Ranks -->
+                        <h2 class="pt-5 pt-lg-6" id="rb-ranks">RB Ranks - 2019 Preseason</h2>
+                        <ul class="nav nav-tabs mt-3" id="tab-07" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="result-tab-07" data-toggle="tab" href="#result-07" role="tab" aria-controls="result-tab-07" aria-selected="true">Visual</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="html-tab-07" data-toggle="tab" href="#html-07" role="tab" aria-controls="html-tab-07" aria-selected="false">Tiered</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content bg-white p-4" id="tab-content-07">
+                            <div class="tab-pane fade show active" id="result-07" role="tabpanel" aria-labelledby="result-tab-07">
+                                <div id="rb-chart"></div>
+                            </div>
+                            <div class="tab-pane fade" id="html-07" role="tabpanel" aria-labelledby="html-tab-07">
+                                <table class="table bg-white text-black">
+                                    <thead>
+                                        <tr>
+                                            <th>RB</th>
+                                            <th>Team</th>
+                                            <th>Rank</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="rb-tier-table">
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- WR Ranks -->
+                        <h2 class="pt-5 pt-lg-6" id="wr-ranks">WR Ranks - 2019 Preseason</h2>
+                        <ul class="nav nav-tabs mt-3" id="tab-08" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="result-tab-08" data-toggle="tab" href="#result-08" role="tab" aria-controls="result-tab-08" aria-selected="true">Visual</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="html-tab-08" data-toggle="tab" href="#html-08" role="tab" aria-controls="html-tab-08" aria-selected="false">Tiered</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content bg-white p-4" id="tab-content-08">
+                            <div class="tab-pane fade show active" id="result-08" role="tabpanel" aria-labelledby="result-tab-08">
+                                <div id="wr-chart"></div>
+                            </div>
+                            <div class="tab-pane fade" id="html-08" role="tabpanel" aria-labelledby="html-tab-08">
+                                <table class="table bg-white text-black">
+                                    <thead>
+                                        <tr>
+                                            <th>WR</th>
+                                            <th>Team</th>
+                                            <th>Rank</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="wr-tier-table">
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -116,5 +182,7 @@
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="js/team-winloss-ranks.js"></script>
     <script src="js/qb-rank.js"></script>
+    <script src="js/rb-rank.js"></script>
+    <script src="js/wr-rank.js"></script>
   </body>
 </html>

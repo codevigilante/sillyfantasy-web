@@ -33,12 +33,11 @@
         {
           bar: 
           {
-            horizontal: true,
+              horizontal: true,
+              dataLabels: {
+                  position: 'top'
+              }
           }
-        },
-        dataLabels: {
-          enabled: true,
-          textAnchor: 'end'
         },
         series: [{
           name: 'Conservative Rank',
@@ -54,34 +53,11 @@
       chart.render();
 
       var tierTable = document.getElementById("team-tier-table");
-      var lastTier = 0;
-
-      for(var i = 0; i < data.tiers.length; ++i)
+      
+      for(var i = 0; i < data.seriesconservative.length; ++i)
       {        
-        var tier = data.tiers[i];
         var team = data.fullnames[i];
         var rank = data.seriesconservative[i];
-
-        if (lastTier !== tier)
-        {
-          lastTier = tier;
-          var tierRow = document.createElement("tr");
-
-          tierRow.classList.add("bg-light");
-
-          var td = document.createElement("td");
-          td.setAttribute("colspan", "3");
-          td.setAttribute("align", "center");
-
-          var strong = document.createElement("strong");
-          var text = document.createTextNode("Tier " + tier);
-
-          strong.appendChild(text);
-          td.appendChild(strong);
-          tierRow.appendChild(td);
-          tierTable.appendChild(tierRow);
-        }
-
         var row = document.createElement("tr");
         var cellTeam = document.createElement("td");
         var cellRank = document.createElement("td");
