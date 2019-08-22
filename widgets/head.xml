@@ -1,17 +1,23 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Win at fantasy football. Fantasy football rankings, analysis, and tools. A unique ranking system based on machine learning and advanced statistics." />
 
-        <!-- Google Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7CFira+Sans:300,400,400i,600" />
-
+    <!-- Libs CSS -->
+        <link rel="stylesheet" href="./fonts/feather/feather.min.css" />
+        <link rel="stylesheet" href="./libs/flatpickr/dist/flatpickr.min.css" />
+        <link rel="stylesheet" href="./libs/quill/dist/quill.core.css" />
+        <link rel="stylesheet" href="./libs/select2/dist/css/select2.min.css" />
+        <link rel="stylesheet" href="./libs/highlight.js/styles/vs2015.css" />
         <!-- Material icons -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <!-- Theme CSS -->
+        <link rel="stylesheet" href="./css/theme.min.css" id="stylesheetLight" />
+        <link rel="stylesheet" href="./css/theme-dark.min.css" id="stylesheetDark" />
 
-        <!-- CSS (including Bootstrap) -->
-        <link rel="stylesheet" href="css/theme.min.css" />
-
+        <style>body { display: none; }</style>
+     
         <title><sillyvar id="title" /></title>
     </head>
 </html>
