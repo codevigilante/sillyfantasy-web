@@ -1,92 +1,37 @@
-var updated = "8.22.2019 @ 0727";
+var updated = "8.30.2019 @ 1411";
 var qbranks =
 {
-    seriesconservative: [ 33.49, 33.00,32.50,32.35,31.71,31.07,30.43,30.28,29.71,29.64,29.07,28.86,28.22,27.93,27.72,27.00,26.93,
-        26.22,26.15,25.72,24.94,24.79,24.08,23.51,23.44,22.73,22.37,21.87,21.51,21.44,20.51,20.30,19.87,19.37,18.66,18.37,18.02,
-        16.98,16.66,16.63,16.12,15.74,15.52,13.92,13.17,13.17,12.74,12.42,12.38,12.24,12.24,11.39,10.81,10.24,9.53,8.82,8.39,8.39,
-        8.25,8.10,5.39,5.25
-    ],
-    fullnames: [ "Patrick Mahomes","Deshaun Watson","Aaron Rodgers","Andrew Luck","Matt Ryan","Baker Mayfield","Carson Wentz",
-        "Cam Newton","Russell Wilson","Drew Brees","Jared Goff","Kyler Murray","Jameis Winston","Ben Roethlisberger","Dak Prescott",
-        "Lamar Jackson","Philip Rivers","Kirk Cousins","Mitchell Trubisky","Tom Brady","Josh Allen","Jimmy Garoppolo","Derek Carr",
-        "Matthew Stafford","Sam Darnold","Andy Dalton","Marcus Mariota","Nick Foles","Eli Manning","Joe Flacco","Dwayne Haskins",
-        "Ryan Fitzpatrick","Josh Rosen","Case Keenum","Ryan Tannehill","Daniel Jones","Drew Lock","Blake Bortles","Will Grier",
-        "Taysom Hill","Teddy Bridgewater","Jacoby Brissett","Robert Griffin III","AJ McCarron","Matt Barkley","Colt McCoy",
-        "Nate Sudfeld","Tyrod Taylor","Chase Daniel","DeShone Kizer","C.J. Beathard","Blaine Gabbert","Brett Hundley","Trevor Siemian",
-        "Chad Henne","Gardner Minshew","Mike Glennon","Jeff Driskel","Cooper Rush","Drew Stanton","Matt Schaub","Taylor Heinicke"
-    ],
-    tiers: [1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,3,4,4,4,4,4,4,4,5,5,5,5,5,5,5,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]
+    seriesconservative:[33.48,33.06,32.62,31.95,31.71,31.18,30.6,29.81,29.72,29.64,29.47,29.46,28.1,28.01,27.6,27.16,26.65,26.55,25.8,25.79,24.95,24.09,23.99,23.73,23.56,22.88,22.2,21.87,21.53,21.51,20.82,20.49,19.68,19.49,18.73,18.3,17.55,17.34,16.9,15.95,15.8,15.53,14.79,13.82,13.25,12.52,12.52,12.39,12.11,11.81,10.69,10.24,9.26,8.38,8.26,7.81,7.39,7.25,7.19,6.69,4.52],
+    fullnames:["Patrick Mahomes","Deshaun Watson","Aaron Rodgers","Baker Mayfield","Matt Ryan","Carson Wentz","Cam Newton","Russell Wilson","Jared Goff","Jameis Winston","Kyler Murray","Drew Brees","Ben Roethlisberger","Lamar Jackson","Dak Prescott","Philip Rivers","Mitchell Trubisky","Tom Brady","Josh Allen","Kirk Cousins","Jimmy Garoppolo","Sam Darnold","Derek Carr","Matthew Stafford","Jacoby Brissett","Andy Dalton","Nick Foles","Marcus Mariota","Joe Flacco","Eli Manning","Ryan Fitzpatrick","Dwayne Haskins","Josh Rosen","Case Keenum","Ryan Tannehill","Daniel Jones","Taysom Hill","Drew Lock","Blake Bortles","Will Grier","Teddy Bridgewater","Robert Griffin","AJ McCarron","Matt Barkley","Nate Sudfeld","Tyrod Taylor","Chase Daniel","Brett Hundley","DeShone Kizer","C.J. Beathard","Colt McCoy","Trevor Siemian","Blaine Gabbert","Mike Glennon","Drew Stanton","Cooper Rush","Jeff Driskel","Gardner Minshew","Chad Henne","Matt Schaub","Taylor Heinicke"],
+    tiers:[1,1,1,2,2,2,2,3,3,3,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,6,7,7,7,7,7,8,8,8,8,9,9,9,10,10,10,10,11,11,11,11,11,11,12,12,12,13,13,13,14,14,14,14,14,15]
 };
 var rbranks =
 {
-    seriesconservative: [ 36.88,36.55,36.36,36.03,35.69,35.17,35.03,34.74,34.55,34.22,34.12,33.55,33.27,33.13,32.79,32.70,32.51,32.27,32.08,31.41,31.08,31.03,30.18,29.99,29.99,29.89,29.89,29.08,28.89,28.75,27.94,27.84,27.42,27.42,27.13,26.75,26.66,25.99,25.85,25.47,25.23,24.85,24.71,24.61,24.42,24.18,23.71,23.56,23.37,22.37,22.14,22.09,21.71,21.71,21.18,21.09,20.99,20.73,20.66,20.57,20.57,20.42,19.00,18.57,18.57,17.66,17.66,17.62,17.36,16.62,16.28,15.67,15.59,15.36,15.25,14.79,14.79,14.28,14.11,13.76,13.76,13.67,13.48,12.43,11.98,11.84,11.69,11.59,11.41,11.27,11.10,10.55,10.48,10.28,9.67,8.43,7.48,7.20,6.34,5.10
-    ],
-    fullnames: [ "Saquon Barkley","Christian McCaffrey","Alvin Kamara","Ezekiel Elliott","David Johnson","Le'Veon Bell","James Conner","Joe Mixon","Nick Chubb","Dalvin Cook",
-        "Todd Gurley","Melvin Gordon","Kerryon Johnson","Damien Williams","Devonta Freeman","Marlon Mack","Aaron Jones","Derrick Henry","Leonard Fournette","Josh Jacobs",
-        "Mark Ingram","Chris Carson","Sony Michel","Kenyan Drake","Phillip Lindsay","James White","David Montgomery","Lamar Miller","Tevin Coleman","Tarik Cohen","Rashaad Penny","Latavius Murray","Miles Sanders","Austin Ekeler","Derrius Guice","Royce Freeman","Jordan Howard","Darrell Henderson","LeSean McCoy","Ronald Jones","Peyton Barber","Nyheim Hines","Matt Breida","Adrian Peterson","Dion Lewis","Duke Johnson","Kalen Ballage","Jaylen Samuels","Carlos Hyde","Damien Harris","Jerick McKinnon",
-        "Ito Smith","Kareem Hunt","Chris Thompson","Giovani Bernard","Justin Jackson","Devin Singletary","C.J. Anderson","Jalen Richard","Jamaal Williams","Justice Hill",
-        "Mike Davis","Alexander Mattison","Chase Edmonds","Gus Edwards","Rex Burkhead","Frank Gore","Malcolm Brown","Darwin Thompson","D'Onta Foreman","Doug Martin",
-        "Ryquell Armstead","Elijah McGuire","Tony Pollard","Ty Montgomery","T.J. Yeldon","Kenneth Dixon","Alfred Blue","Theo Riddick","Wayne Gallman","Wendell Smallwood",
-        "Benny Snell","Corey Clement","Devontae Booker","Cameron Artis-Payne","Andre Ellington","Jordan Wilkins","Alfred Morris","Damarea Crockett","Spencer Ware",
-        "Zach Zenner","Jordan Scarlett","Brian Hill","Dontrell Hilliard","Josh Adams","Rod Smith","Benny Cunningham","C.J. Prosise","Kyle Juszczyk","Dwayne Washington"
-    ],
-    tiers: [1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9]
+    seriesconservative:[36.88,36.55,36.36,35.87,35.62,35.4,35.04,34.6,34.59,34.43,34.27,33.64,33.17,33.1,32.71,32.54,32.48,32.03,31.74,31.52,31.06,30.84,30.83,30.44,29.85,29.63,29.57,29.42,28.78,28.42,27.98,27.87,27.69,27.58,27.19,26.96,26.67,26.54,25.93,25.64,25.2,25.07,24.68,23.98,23.81,23.64,23.52,23.47,23.42,22.95,22.84,22.16,21.82,21.58,21.58,21.03,20.94,20.62,20.34,20.17,20.14,19.99,19.75,19.6,18.57,18.19,17.97,17.2,16.68,16.16,15.98,15.98,15.2,14.98,14.54,14.53,14.32,14.04,13.86,13.63,13.19,12.97,12.46,12.06,11.78,11.2,11.12,10.28,10.25,10.21,9.9,8.54,8.04,7.61,6.16,6.05,5.86,3.48,-4.66],
+    fullnames:["Saquon Barkley","Christian McCaffrey","Alvin Kamara","David Johnson","Ezekiel Elliott","James Conner","Nick Chubb","Le'Veon Bell","Dalvin Cook","Joe Mixon","Todd Gurley","Damien Williams","Aaron Jones","Kerryon Johnson","Devonta Freeman","Leonard Fournette","Chris Carson","Josh Jacobs","Derrick Henry","Marlon Mack","David Montgomery","Mark Ingram","Sony Michel","Melvin Gordon","James White","Duke Johnson","Phillip Lindsay","Tevin Coleman","Miles Sanders","Latavius Murray","Kenyan Drake","Austin Ekeler","Derrius Guice","Tarik Cohen","Rashaad Penny","Royce Freeman","Jordan Howard","Matt Breida","Kalen Ballage","Darrell Henderson","LeSean McCoy","Peyton Barber","Dion Lewis","Darwin Thompson","Adrian Peterson","Justice Hill","Justin Jackson","Ronald Jones","Jaylen Samuels","Devin Singletary","Tony Pollard","Damien Harris","Nyheim Hines","Alexander Mattison","Chris Thompson","Ito Smith","Giovani Bernard","C.J. Anderson","Jamaal Williams","Kareem Hunt","Malcolm Brown","Jalen Richard","Mike Davis","Ty Montgomery","Chase Edmonds","Rex Burkhead","Gus Edwards","Frank Gore","Jerick McKinnon","Ryquell Armstead","Carlos Hyde","Damarea Crockett","Alfred Blue","Corey Clement","Wayne Gallman","Dontrell Hilliard","T.J. Yeldon","Brian Hill","Benny Snell","Kenneth Dixon","Elijah McGuire","Theo Riddick","Cameron Artis-Payne","Jordan Wilkins","Doug Martin","Devontae Booker","Jordan Scarlett","Alfred Morris","Wendell Smallwood","Josh Adams","Andre Ellington","C.J. Prosise","Rod Smith","Zach Zenner","Dwayne Washington","Kyle Juszczyk","Spencer Ware","D'Onta Foreman","Benny Cunningham"],
+    tiers:[1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,3,4,4,4,4,4,4,4,5,5,5,5,5,5,5,6,6,6,6,6,6,6,7,7,7,7,7,7,7,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,10,10,10,10,11,11,11,11,11,12,12,12,12,12,12,12,12,13,13,13,13,13,13,14,14,14,14,15,15,15,16,16,16,17,18]
 };
 var wrranks =
 {
-    seriesconservative: [ 26.67,26.56,26.41,26.22,26.18,26.03,25.97,25.77,25.65,25.54,25.48,25.28,25.22,24.90,24.80,24.73,24.65,24.63,24.35,24.29,24.01,23.82,
-        23.67,23.65,23.60,23.52,23.52,23.50,23.09,22.95,22.86,22.48,22.46,22.44,22.41,22.18,22.10,21.99,21.95,21.82,21.75,21.22,21.16,20.99,20.95,20.88,20.71,
-        20.52,20.37,20.22,20.16,20.12,20.12,19.91,19.86,19.76,19.61,19.50,19.46,19.22,18.57,18.52,18.50,18.42,18.33,18.16,18.06,17.97,17.95,17.63,17.53,17.40,
-        17.34,17.27,17.22,17.20,17.04,16.84,16.76,16.46,16.46,16.35,16.32,16.18,16.10,16.07,15.87,15.84,15.67,15.59,15.41,15.24,15.21,14.89,14.78,14.70,14.57,
-        14.54,14.44,14.19,14.08,14.03,13.99,13.90,13.70,13.58,13.12,13.01,12.78,12.53,12.37,12.18,12.06,11.72,11.51,11.44,11.17,10.95,10.74,10.02,9.81,9.72,9.42,
-        9.34,9.25,9.04,9.00,8.83,8.78,8.66,8.57,8.40,7.93,7.59,7.59,7.55,7.30,6.57,5.98,5.55,3.85,3.26,2.15
-    ],
-    fullnames: [ "DeAndre Hopkins","Davante Adams","Julio Jones","Michael Thomas","Odell Beckham Jr.","JuJu Smith-Schuster","Tyreek Hill","Mike Evans","Antonio Brown",
-        "Keenan Allen","T.Y. Hilton","Amari Cooper","Adam Thielen","Stefon Diggs","Julian Edelman","Robert Woods","Brandin Cooks","Kenny Golladay","Chris Godwin",
-        "Tyler Lockett","Cooper Kupp","Alshon Jeffery","Allen Robinson","Tyler Boyd","D.J. Moore","Calvin Ridley","Mike Williams","A.J. Green","Robby Anderson",        "Jarvis Landry","Sammy Watkins","Corey Davis","Christian Kirk","Dante Pettis","Will Fuller","Sterling Shepard","Marvin Jones","Curtis Samuel","Dede Westbrook",
-        "Larry Fitzgerald","Courtland Sutton","Geronimo Allison","Marquez Valdes-Scantling","DeSean Jackson","Keke Coutee","Emmanuel Sanders","Golden Tate",
-        "Anthony Miller","Devin Funchess","Michael Gallup","John Brown","Tyrell Williams","Donte Moncrief","Kenny Stills","D.K. Metcalf","James Washington","Jamison Crowder",
-        "DaeSean Hamilton","N'Keal Harry","Mohamed Sanu","DeVante Parker","Albert Wilson","Marquise Goodwin","Parris Campbell","Tre'Quan Smith","Adam Humphries",       "Quincy Enunwa","Robert Foster","Deebo Samuel","Marqise Lee","Ted Ginn Jr.","Zay Jones","Taylor Gabriel","A.J. Brown","Andy Isabella","Marquise Brown","Trey Quinn",
-        "Josh Doctson","Randall Cobb","Nelson Agholor","Mecole Hardman","Paul Richardson","Danny Amendola","Willie Snead","Cole Beasley","Phillip Dorsett","David Moore",
-        "John Ross","D.J. Chark","Chris Conley","Antonio Callaway","Demarcus Robinson","Equanimeous St. Brown","Josh Reynolds","Travis Benjamin","Miles Boykin",
-        "Rashard Higgins","Terry McLaurin","Hakeem Butler","Keelan Cole","JJ Arcega-Whiteside","Breshad Perriman","Chris Hogan","KeeSean Johnson","Diontae Johnson",
-        "Taywan Taylor","Ryan Grant","Keith Kirkwood","Demaryius Thomas","Cordarrelle Patterson","Chester Rogers","Trent Taylor","Laquon Treadwell","Jakeem Grant",
-        "Justin Watson","Tim Patrick","Jaron Brown","J.J. Nelson","Ryan Switzer","Cody Latimer","Jarius Wright","Alex Erickson","Chris Moore","Justin Hardy","Riley Ridley",
-        "Tajae Sharpe","Torrey Smith","DeAndre Carter","Tavon Austin","Isaiah McKenzie","Marcell Ateman","Seth Roberts","Zach Pascal","Brice Butler","Jordan Taylor","Russell Shepard","Eli Rogers","Andy Jones","Deontay Burnett","Russell Gage","Josh Malone","Geremy Davis","Dwayne Harris"
-    ],
-    tiers: [1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9]
+    seriesconservative:[26.67,26.55,26.42,26.24,26.16,26.07,25.99,25.82,25.61,25.56,25.38,25.29,25.06,24.86,24.85,24.81,24.61,24.59,24.43,24.41,24.05,23.95,23.82,23.6,23.48,23.42,23.41,23.3,22.81,22.7,22.63,22.61,22.52,22.45,22.36,22.2,22.03,21.82,21.6,21.5,21.39,21.36,21.29,21.17,20.87,20.83,20.65,20.52,20.46,20.4,20.07,19.94,19.79,19.42,19.42,19.38,19.35,19.34,19.12,18.91,18.53,18.45,18.43,18.43,18.4,18.13,18.03,17.76,17.72,17.53,17.41,17.35,17.35,17.18,17.03,16.99,16.87,16.64,16.55,16.48,16.47,16.45,16.45,16.09,16.04,15.95,15.89,15.87,15.84,15.33,15.09,14.78,14.57,14.45,14.43,14.36,14.31,14.18,13.68,13.65,13.59,13.56,13.48,12.96,12.95,12.88,12.49,12.47,12.45,12.13,12.05,11.97,11.8,11.47,11.33,11.2,11.17,10.78,10.18,10.11,9.85,9.67,9.38,9.07,9.04,9.0,8.91,8.83,8.23,8.17,7.42,7.34,6.99,6.58,5.69,5.56,5.43,4.69,4.49,3.39,3.16,-1.11],
+    fullnames:["DeAndre Hopkins","Davante Adams","Julio Jones","Odell Beckham Jr.","JuJu Smith-Schuster","Michael Thomas","Tyreek Hill","Mike Evans","Antonio Brown","Keenan Allen","Adam Thielen","Amari Cooper","Stefon Diggs","Julian Edelman","Brandin Cooks","Robert Woods","Tyler Lockett","Chris Godwin","T.Y. Hilton","Kenny Golladay","Tyler Boyd","Cooper Kupp","D.J. Moore","Mike Williams","Alshon Jeffery","Allen Robinson","Robby Anderson","Calvin Ridley","A.J. Green","Jarvis Landry","Christian Kirk","Sammy Watkins","Curtis Samuel","Dede Westbrook","Will Fuller","Sterling Shepard","Corey Davis","Marvin Jones","Emmanuel Sanders","Larry Fitzgerald","Dante Pettis","Marquez Valdes-Scantling","Courtland Sutton","Geronimo Allison","Michael Gallup","Donte Moncrief","DeSean Jackson","Anthony Miller","Jamison Crowder","John Brown","Tyrell Williams","Golden Tate","Keke Coutee","James Washington","D.K. Metcalf","Mohamed Sanu","Devin Funchess","Kenny Stills","DaeSean Hamilton","Marquise Goodwin","DeVante Parker","Deebo Samuel","Quincy Enunwa","Adam Humphries","Tre'Quan Smith","Albert Wilson","Trey Quinn","N'Keal Harry","Ted Ginn Jr.","Parris Campbell","Rashard Higgins","Marquise Brown","Zay Jones","A.J. Brown","Robert Foster","Marqise Lee","Taylor Gabriel","Randall Cobb","Cole Beasley","Miles Boykin","Nelson Agholor","Mecole Hardman","Andy Isabella","Danny Amendola","KeeSean Johnson","Willie Snead","Paul Richardson","D.J. Chark","Josh Doctson","David Moore","John Ross","Chris Conley","Travis Benjamin","Josh Reynolds","Breshad Perriman","JJ Arcega-Whiteside","Jaron Brown","Demarcus Robinson","Terry McLaurin","Chris Hogan","Antonio Callaway","Phillip Dorsett","Keelan Cole","Taywan Taylor","Trent Taylor","Diontae Johnson","Keith Kirkwood","Cordarrelle Patterson","Equanimeous St. Brown","Ryan Grant","Demaryius Thomas","Justin Watson","Chester Rogers","Ryan Switzer","Cody Latimer","Tim Patrick","Jakeem Grant","J.J. Nelson","Jarius Wright","Tajae Sharpe","Alex Erickson","Laquon Treadwell","Justin Hardy","Chris Moore","Torrey Smith","DeAndre Carter","Tavon Austin","Riley Ridley","Isaiah McKenzie","Seth Roberts","Marcell Ateman","Russell Shepard","Eli Rogers","Josh Malone","Zach Pascal","Deontay Burnett","Andy Jones","Brice Butler","Russell Gage","Jordan Taylor","Geremy Davis","Dwayne Harris"],
+    tiers:[1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,10,10,10,10,10,10,10,11,11,11,11,11,12,12,12,12,13]
 };
 var teranks =
 {
-    seriesconservative: [26.29,26.01,25.85,25.46,25.34,25.22,24.74,24.62,24.18,24.10,23.98,23.46,23.06,22.90,22.86,22.66,22.66,22.34,22.30,21.54,21.42,21.26,21.22,20.54,
-        20.50,19.91,19.78,19.54,19.47,19.25,19.16,18.72,18.31,18.25,18.01,17.61,17.53,17.23,17.14,17.13,16.95,16.90,16.23,16.19,16.19,15.75,15.45,15.28,15.18,14.98,14.24,
-        14.03,13.92,13.20,13.12,13.04,12.40,12.24,12.00,11.92,11.12,11.04,10.88,10.64,10.64,9.85,9.29,8.89,8.25,8.25,7.85,7.69,7.05,5.77,4.18,3.70,2.50],
-    fullnames: ["Travis Kelce","George Kittle","Zach Ertz","O.J. Howard","Evan Engram","Hunter Henry","Jared Cook","Vance McDonald","Eric Ebron","David Njoku","Austin Hooper",
-        "Delanie Walker","Trey Burton","Mark Andrews","Jordan Reed","Jack Doyle","Kyle Rudolph","Jimmy Graham","Greg Olsen","Dallas Goedert","Noah Fant","T.J. Hockenson",
-        "Chris Herndon IV","Tyler Eifert","Mike Gesicki","Gerald Everett","Jason Witten","Ricky Seals-Jones","Cameron Brate","Ian Thomas","Darren Waller","Hayden Hurst",
-        "Will Dissly","Nick Vannett","Benjamin Watson","Vernon Davis","Jordan Thomas","Matt LaCosse","Irv Smith Jr.","Geoff Swaim","Jonnu Smith","Charles Clay",
-        "Jesse James","C.J. Uzomah","Adam Shaheen","Blake Jarwin","Jace Sternberger","Tyler Kroft","Jake Butt","Tyler Higbee","Kahale Warring","Luke Willson","Jason Croom",
-        "Jeff Heuerman","Jordan Akins","Demetrius Harris","Josh Hill","Rhett Ellison","Mo Alie-Cox","Blake Bell","Virgil Green","James O'Shaughnessy","Xavier Grimble",
-        "Ed Dickson","Dwayne Allen","Garrett Celek","Nick Boyle","Dan Arnold","Dalton Schultz","Logan Paulsen","Derek Carrier","Eric Tomlinson","Seth Devalve",
-        "Marcedes Lewis","David Morgan","Michael Roberts","Caleb Wilson"],
-    tiers: [1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]
+    seriesconservative:[26.3,26.05,25.81,25.51,25.29,25.2,24.75,24.72,24.15,24.08,23.66,23.32,23.19,23.19,22.81,22.74,22.52,22.26,21.79,21.7,21.65,21.31,21.26,21.26,20.46,19.96,19.82,19.74,19.17,19.05,18.93,18.87,18.22,18.21,18.08,17.6,17.52,17.5,17.48,17.19,16.77,16.72,16.55,16.47,16.12,15.87,15.1,15.09,14.87,14.08,13.29,13.19,13.11,13.11,12.97,12.79,12.63,12.41,12.32,11.85,11.85,11.76,11.45,10.84,10.63,9.85,9.85,8.97,8.81,8.34,6.16,5.92,5.6,2.42,2.25,1.5,0.58],
+    fullnames:["Travis Kelce","George Kittle","Zach Ertz","O.J. Howard","Evan Engram","Hunter Henry","Vance McDonald","Jared Cook","David Njoku","Austin Hooper","Delanie Walker","Mark Andrews","Trey Burton","Eric Ebron","Greg Olsen","Kyle Rudolph","Jordan Reed","Jimmy Graham","Dallas Goedert","Jack Doyle","T.J. Hockenson","Darren Waller","Chris Herndon IV","Noah Fant","Tyler Eifert","Mike Gesicki","Jason Witten","Gerald Everett","Ian Thomas","Cameron Brate","Will Dissly","Ricky Seals-Jones","Geoff Swaim","Hayden Hurst","Benjamin Watson","Nick Vannett","Matt LaCosse","Vernon Davis","Jordan Thomas","Irv Smith Jr.","Charles Clay","Jesse James","Blake Jarwin","C.J. Uzomah","Adam Shaheen","Jonnu Smith","Jace Sternberger","Tyler Higbee","Tyler Kroft","Kahale Warring","Demetrius Harris","Mo Alie-Cox","Jason Croom","Jordan Akins","Rhett Ellison","Jake Butt","Jeff Heuerman","Luke Willson","Josh Hill","Virgil Green","Blake Bell","James O'Shaughnessy","Xavier Grimble","Ed Dickson","Dwayne Allen","Dan Arnold","Nick Boyle","Logan Paulsen","Garrett Celek","Dalton Schultz","Derek Carrier","Seth Devalve","Marcedes Lewis","Caleb Wilson","David Morgan","Eric Tomlinson","Michael Roberts"],
+    tiers:[1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,9,9,9,9,10,10,10,11,11,11,12,12,12,13]
 };
 var kranks =
 {
-    seriesconservative: [19.95,19.85,19.64,19.62,19.49,19.33,19.04,18.95,18.91,18.79,18.70,18.49,18.43,18.37,17.95,17.91,17.89,17.75,17.66,17.47,17.35,17.27,17.17,16.94,
-        16.84,16.84,16.80,16.53,16.47,16.14],
-    fullnames: ["Greg Zuerlein","Justin Tucker","Stephen Gostkowski","Harrison Butker","Wil Lutz","Ka'imi Fairbairn","Robbie Gould","Jake Elliott","Mason Crosby",
-        "Brett Maher","Adam Vinatieri","Matt Prater","Giorgio Tavecchio","Jason Myers","Graham Gano","Dan Bailey","Aldrick Rosas","Chris Boswell","Ryan Succop",
-        "Greg Joseph","Brandon McManus","Josh Lambo","Daniel Carlson","Cairo Santos","Steven Hauschka","Dustin Hopkins","Eddy Pineiro","Zane Gonzalez",
-        "Randy Bullock","Jason Sanders"],
-    tiers: [1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4]
+    seriesconservative:[19.98,19.8,19.64,19.64,19.5,19.39,19.01,18.98,18.91,18.86,18.72,18.51,18.3,18.07,18.01,17.96,17.9,17.78,17.78,17.43,17.38,17.17,17.16,16.98,16.91,16.88,16.84,16.48,16.46,16.13],
+    fullnames:["Greg Zuerlein","Justin Tucker","Harrison Butker","Stephen Gostkowski","Wil Lutz","Ka'imi Fairbairn","Mason Crosby","Robbie Gould","Jake Elliott","Brett Maher","Matt Prater","Jason Myers","Adam Vinatieri","Giorgio Tavecchio","Aldrick Rosas","Graham Gano","Dan Bailey","Ryan Succop","Chris Boswell","Brandon McManus","Josh Lambo","Daniel Carlson","Greg Joseph","Steven Hauschka","Cairo Santos","Dustin Hopkins","Eddy Pineiro","Randy Bullock","Zane Gonzalez","Jason Sanders"],
+    tiers:[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
 };
 var defranks =
 {
-    seriesconservative: [19.80,19.66,19.60,19.43,19.41,19.28,19.22,19.03,18.91,18.91,18.85,18.66,18.66,18.60,18.51,18.35,18.26,18.16,18.14,18.05,17.87,17.85,17.74,17.66,
-        17.52,17.44,17.39,17.20,17.10,17.01,16.91,16.81],
-    fullnames: ["Bears","Jaguars","Rams","Chargers","Vikings","Ravens","Texans","Browns","Saints","Broncos","Patriots","Bills","Cowboys","Eagles","Colts","Steelers",
-        "Seahawks","Titans","Chiefs","Panthers","Packers","Falcons","Redskins","Jets","49ers","Cardinals","Lions","Giants","Dolphins","Buccaneers","Bengals",
-        "Raiders"],
-    tiers: [1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,4,4]
+    seriesconservative:[19.81,19.69,19.6,19.44,19.42,19.3,19.15,19.04,19.0,18.92,18.87,18.86,18.56,18.5,18.45,18.32,18.32,18.29,18.13,17.96,17.8,17.74,17.68,17.63,17.53,17.43,17.42,17.2,17.11,17.0,16.91,16.81],
+    fullnames:["Chicago","Jacksonville","Los Angeles","Minnesota","Los Angeles","Baltimore","Houston","New Orleans","Cleveland","New England","Denver","Buffalo","Dallas","Philadelphia","Indianapolis","Seattle","Pittsburgh","Tennessee","Kansas City","Carolina","Green Bay","Atlanta","New York","Washington","San Francisco","Detroit","Arizona","New York","Miami","Tampa Bay","Cincinnati","Oakland"],
+    tiers:[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2]
 };
